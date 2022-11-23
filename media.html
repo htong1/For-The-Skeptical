@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <map name = "FTCHeader">
+    <area shape="rect" coords = "280,600,370,630" href = "
+      media.html"/>
+    <area shape="rect" coords = "410,600,500,630" href = "
+      crew.html"/>
+    <area shape="rect" coords = "540,550,630,610" href = "
+      index.html"/>
+    <area shape="rect" coords = "660,600,760,630" href = "
+      info.html"/>
+    <area shape="rect" coords = "780,600,870,630" href = "
+      fests.html"/>
+    <area shape="rect" coords = "1045,600,1170,630" href = "
+      comments.html"/>
+    <area shape="rect" coords = "990,500,1170,520" href = "
+      index.html"/>
+  </map>
+  <img src="images/FtS_MEDIA_pageheader.jpg" width = "1200" height = "671" class = "headers" usemap = "#FTCHeader"></img>
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <br>
+  <br>
+  <div id = "vids"
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <iframe src="https://player.vimeo.com/video/763549245?h=523d64f513" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/763549245">For The Skeptical TRAILER</a> from <a href="https://vimeo.com/user2006644">Dawn Westlake</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  <br>
+  <br>
+  <iframe src="https://player.vimeo.com/video/765121139?h=20540a43d9" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/765121139">For the Skeptical BEHIND THE SCENES</a> from <a href="https://vimeo.com/user2006644">Dawn Westlake</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </div>
+  <br>
+  <br>
+  <br>
+<h1 class = textHeaders>Stills</h1>
+<h3 class="textHeaders"> Click to expand</h3>
+<div class = "image-grid">
+<img src = "images/ForTheSkeptical_1.jpg" height = "400" width = "700" alt = "FTS" id = "img1" onclick = "enlargeImg1()">
+<img src = "images/ForTheSkeptical_3.jpg" height = "400" width = "700" alt = "FTS" id = "img2" onclick = "enlargeImg2()">
+<img src = "images/FortheSkeptical_5.jpg" height = "400" width = "700" alt = "FTS" id = "img3" onclick = "enlargeImg3()">
+<img src = "images/FortheSkeptical_8.jpg" height = "400" width = "700" alt = "FTS" id = "img4" onclick = "enlargeImg4()">
+  <br>
+</div>
+
+  <script>
+    let a1 = 0;
+    let a2 = 0;
+    let a3 = 0;
+    let a4 = 0;
+    
+      // Get the img object using its Id
+      img1 = document.getElementById("img1");
+    img2 = document.getElementById("img2");
+    img3 = document.getElementById("img3");
+    img4 = document.getElementById("img4");
+      // Function to increase image size
+      function enlargeImg1() {
+        // Set image size to 1.5 times original
+        if(a1 == 0){
+          img1.style.transform = "scale(2)";
+        // Animation effect
+        img1.style.transition = "transform 0.25s ease";
+          a1 = 1;
+        } else {
+          img1.style.transform = "scale(1)";
+        img1.style.transition = "transform 0.25s ease";
+          a1 = 0;
+        }
+        
+      }
+
+    function enlargeImg2() {
+       if(a2 == 0){
+          img2.style.transform = "scale(2)";
+        // Animation effect
+        img2.style.transition = "transform 0.25s ease";
+          a2 = 1;
+        } else {
+          img2.style.transform = "scale(1)";
+        img2.style.transition = "transform 0.25s ease";
+         a2 = 0;
+        }
+      }
+
+    function enlargeImg3() {
+       if(a3 == 0){
+          img3.style.transform = "scale(2)";
+        // Animation effect
+        img3.style.transition = "transform 0.25s ease";
+          a3 = 1;
+        } else {
+          img3.style.transform = "scale(1)";
+        img3.style.transition = "transform 0.25s ease";
+         a3 = 0;
+        }
+      }
+
+    function enlargeImg4() {
+        if(a4 == 0){
+          img4.style.transform = "scale(2)";
+        // Animation effect
+        img4.style.transition = "transform 0.25s ease";
+          a4 = 1;
+        } else {
+          img4.style.transform = "scale(1)";
+        img4.style.transition = "transform 0.25s ease";
+          a4 = 0;
+        }
+      }
+      // Function to reset image size
+      function resetImg() {
+        // Set image size to original
+        img.style.transform = "scale(1)";
+        img.style.transition = "transform 0.25s ease";
+      }
+    </script>
+
+<!--<div id="context-menu">
+  <div class="item">
+    <i class="download"></i> Download Still</div>
+</div>-->
+
+ <!--<a href="images/ForTheSkeptical_1.jpg" download="FtS_Still1">
+         <button type="button">Download</button>
+         </a>-->
+</body>
+
+</html>
